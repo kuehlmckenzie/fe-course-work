@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Today</title>
+  </head>
+  <body>
+    <header><h2>Travel In Serenity</h2></header>
+    <p>
+      Thank you for choosing us for you travel needs and desires! <br />Please
+      fill out the form below so we can make sure your trip is serene.
+    </p>
+    <form action="https://httpbin.org/post" method="post">
+      <main>
+        <div class="name-field">
+          <label for="name-field">First Name</label>
+          <input
+            id="first-name"
+            name="first-name"
+            type="text"
+            placeholder="First Name"
+          />
+        </div>
+        <br />
+        <div class="name-field">
+          <label for="name-field">Last Name</label>
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            placeholder="Last Name"
+          />
+        </div>
+        <br />
+        <div class="name-field">
+          <div class="email-field"></div>
+          <label for="email"> Email </label>
+          <input id="email" name="email" type="email" placeholder="Email" />
+        </div>
+        <br />
+        <div class="phone-number">
+          <label for="phone-number">Phone Number</label>
+          <input
+            id="phone-number"
+            name="phone-number"
+            type="text"
+            placeholder="Phone Number"
+          />
+        </div>
+        <br />
+        <div class="start-date">
+          <div class="start-date"></div>
+          <label for="start-date"> Trip Start Date</label>
+          <input
+            id="start-date"
+            name="start-date"
+            type="date"
+            placeholder="Start Date"
+            required
+          />
+        </div>
+        <br />
+        <div class="end-date">
+          <div class="end-date"></div>
+          <label for="end-date"> Trip End Date </label>
+          <input
+            id="end-date"
+            name="end-date"
+            type="date"
+            placeholder="End Date"
+            required
+          />
+        </div>
+        <br />
+        <p>
+          Here at Serenity we provide our world class service for an affordable
+          cost. <br>You can select our basic package, and select our premium add
+          ons, or upgrade to our premium resorts package to include everything
+          below and more for our discounted rate!
+        </p>
+        <div class="Packages">
+          <input name="Packages" id="premium" type="radio" value="premium" />
+          <label for="premium">Premium Package</label>
+          <input name="Packages" id="basic" type="radio" value="basic" />
+          <label for="basic">Basic Package</label>
+        </div>
+        <div class="add-ons">
+          <input name="add-ons" id="hotel" type="checkbox" value="hotel" />
+          <label for="hotel">Hotel Reservations</label>
+          <input
+            name="add-ons"
+            id="car-rental"
+            type="checkbox"
+            value="car-rental"
+          />
+          <label for="car-rental">Car Rental</label>
+
+          <input name="add-ons" id="dining" type="checkbox" value="dining" />
+          <label for="dining">Dinner Reservations</label>
+        </div>
+        <p>We provide our upmost dedication to make sure all of our vacationers have what they need to relax. <br>
+          If you have accommodation concerns please provide this information down below.</p>
+        <div class="accommodations">
+          <select name="accommodations">
+            <option value="">Special accommodations</option>
+            <option value="allergies">Allergies</option>
+            <option value="mobility">Mobility concerns</option>
+            <option value="Interpreter">Interpreter</option>
+            <option value="other">Other</option>
+            <option value="none-needed">None Needed</option>
+          </select>
+        </div>
+        <br>
+        <div class="accommodation-info-field">
+          <label for="accommodation-info"
+            >If accommodations are needed please explain below how we can best
+            assist you:<br>
+          </label>
+          <br />
+
+          <textarea name="accommodation-info" id="accommodation-info" rows="10">
+Provide assistance details below</textarea
+          >
+        </div>
+        <br>
+        <div class="submit-field">
+          <input type="submit" value="Book my Reservation" />
+        </div>
+        <video height="150px" width="350px" controls>
+      <source src="assets/better-video-of-plane.mp4" type="video/mp4" />
+      </main>
+    </form>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: travel_in_serenity@devpipeline.com</p>
+          <p>Phone: (888) 321-4567</p>
+        </div>
+
+        <div class="footer-section">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+      </div>
+
+      <p>&copy; 2026 Traveling In Serenity. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
