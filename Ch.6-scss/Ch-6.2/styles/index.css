@@ -1,0 +1,18 @@
+.main {
+  text-decoration: underline;
+}
+.main .sub {
+  font-weight: 900;
+}
+
+.sub :hover {
+  color: blue;
+  border: solid;
+  width: 40%;
+}
+
+.main:hover {
+  color: blue;
+  border: solid;
+  width: 40%;
+}/*# sourceMappingURL=index.css.map */

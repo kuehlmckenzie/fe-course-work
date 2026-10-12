@@ -1,0 +1,240 @@
+// // defined with % — never appears in compiled CSS on its own
+// %flex-center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// %card-base {
+//   background: white;
+//   border-radius: 8px;
+//   padding: 1rem 1.25rem;
+//   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+// }
+
+// // use @extend to pull the declarations in
+// .hero {
+//   @extend %flex-center;
+//   @extend %card-base
+//   height: 400px;
+// }
+
+// .modal {
+//   @extend %flex-center;
+//   @extend %card-base;
+//   width: 500px;
+// }
+// .notification {
+//   @extend %card-base;
+//   border-left: 4px solid #3b5bdb;
+// }
+
+// mixin examples not real example
+// @mixin mixin-name {
+//   CSS Code block;
+// }
+
+// selector {
+//   @include mixin-name;
+// }
+
+$base-color: orange;
+$accent-color: white;
+$gradient-theme: linear-gradient($accent-color, $base-color);
+
+@mixin mid-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+}
+
+.hero-img {
+  background: $gradient-theme;
+  height: 100vh;
+  @include mid-center-flex;
+}
+
+.hero-msg-con {
+  border: 16px solid $accent-color;
+  @include mid-center-flex;
+  height: 250px;
+  width: 250px;
+}
+
+.hero-msg {
+  text-align: center;
+  color: $accent-color;
+  font-size: 48px;
+}
+// adding parameters and arguments
+
+// $base-color: orange;
+// $accent-color: white;
+// $gradient-theme: linear-gradient($accent-color, $base-color);
+
+// @mixin mid-center-flex($justify-content, $align-items) {
+//   display: flex;
+//   justify-content: $justify-content;
+//   align-items: $align-items;
+// }
+
+// * {
+//   margin: 0;
+// }
+
+// .hero-img {
+//   background: $gradient-theme;
+//   height: 100vh;
+//   @include mid-center-flex(center, center);
+// }
+
+// .hero-msg-con {
+//   border: 16px solid $accent-color;
+//   @include mid-center-flex(flex-start, flex-end);
+//   height: 250px;
+//   width: 250px;
+// }
+
+// .hero-msg {
+//   text-align: center;
+//   color: $accent-color;
+//   font-size: 48px;
+// }
+
+// adding con sizes
+
+// $base-color: orange;
+// $accent-color: white;
+// $gradient-theme: linear-gradient($accent-color, $base-color);
+
+// @mixin con-size($height, $width) {
+//   height: $height;
+//   width: $width;
+// }
+
+// @mixin mid-center-flex($justify-content, $align-items) {
+//   display: flex;
+//   justify-content: $justify-content;
+//   align-items: $align-items;
+// }
+
+// * {
+//   margin: 0;
+// }
+
+// .hero-img {
+//   background: $gradient-theme;
+//   @include mid-center-flex(center, center);
+//   @include con-size(100vh, null);
+// }
+
+// .hero-msg-con {
+//   border: 16px solid $accent-color;
+//   @include mid-center-flex(flex-start, flex-end);
+//   @include con-size(250px, 250px);
+// }
+
+// .hero-msg {
+//   text-align: center;
+//   color: $accent-color;
+//   font-size: 48px;
+// }
+// .welcome-msg {
+//   @include mid-center-flex(center, flex-start);
+// }
+
+// adding default values
+
+$base-color: orange;
+$accent-color: white;
+$gradient-theme: linear-gradient($accent-color, $base-color);
+
+// @mixin con-size($height: 250px, $width: 250px) {
+//   height: $height;
+//   width: $width;
+// }
+
+// @mixin mid-center-flex(
+//   $justify-content: center,
+//   $align-items: center,
+//   $gap: 18px
+// ) {
+//   display: flex;
+//   justify-content: $justify-content;
+//   align-items: $align-items;
+//   gap: $gap;
+//   @content;
+// }
+
+@mixin con-styles($container-color: red, $height: 200px, $width: 300px) {
+  background-color: $container-color;
+  height: $height;
+  width: $width;
+}
+
+@mixin mid-center-flex(
+  $justify-content: center,
+  $align-items: center,
+  $gap: 10px
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+  @content;
+}
+
+@mixin rounded-border($radius: 10px, $color: $accent-color) {
+  border-radius: $radius;
+  border-color: $color;
+}
+
+.custom-container {
+  @include con-styles($container-color: purple);
+}
+.flex-container {
+  @include mid-center-flex(center, center, 20px);
+
+  border: 1px solid black;
+}
+
+.updated-flex-container {
+  @include mid-center-flex();
+}
+
+.rounded-box {
+  @include con-styles;
+  @include rounded-border();
+}
+
+.custom-container {
+  @include con-styles($container-color: purple, $height: 150px, $width: 250px);
+  @include rounded-border();
+}
+
+* {
+  margin: 0;
+}
+
+.hero-img {
+  @include mid-center-flex($gap: 10px) {
+    background: $gradient-theme;
+  }
+}
+
+.hero-msg-con {
+  @include mid-center-flex(flex-end, flex-end, none) {
+    border: 16px solid $accent-color;
+  }
+}
+
+.hero-msg {
+  text-align: center;
+  color: $accent-color;
+  font-size: 48px;
+  padding-right: 3%;
+}

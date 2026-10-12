@@ -1,0 +1,21 @@
+.one {
+  background-color: black;
+  color: black;
+}
+.one .two {
+  font-weight: 900;
+}
+.one .two .three {
+  color: red;
+}
+
+.one {
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
+.one .two {
+  font-weight: 900;
+}
+.one .two .three {
+  color: black;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+.hero-img {
+  background: linear-gradient(white, orange);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-msg-con {
+  border: 16px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+}
+
+.hero-msg {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+
+.custom-container {
+  background-color: purple;
+  height: 200px;
+  width: 300px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+}
+
+.updated-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rounded-box {
+  background-color: red;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.custom-container {
+  background-color: purple;
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+* {
+  margin: 0;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(white, orange);
+}
+
+.hero-msg-con {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: none;
+  border: 16px solid white;
+}
+
+.hero-msg {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  padding-right: 3%;
+}/*# sourceMappingURL=index.css.map */
