@@ -1,0 +1,256 @@
+:root {
+  margin: 0;
+  padding: 0;
+  background-color: #6486bf;
+  color: white;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body .navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+body .navbar .navbar-links {
+  color: white;
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 0;
+  gap: 1.5rem;
+}
+body .navbar .navbar-links .moretag {
+  align-content: center;
+  position: static;
+  margin: 5px 5px 0px 10px;
+  background-color: #e91e63;
+  border-color: #e91e63;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px 0;
+}
+body .navbar .navbar-links .moretag a {
+  padding: 15px;
+  color: white;
+}
+body .navbar .navbar-links a {
+  color: white;
+}
+body .navbar .logo {
+  white-space: nowrap;
+}
+body .hero-container {
+  padding: 0;
+  display: flex;
+  align-content: center;
+  background-image: url(../assets/statue3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  margin: 0;
+}
+body .hero-container .welcome-section {
+  height: 700px;
+  margin-left: 40%;
+}
+body .hero-container .welcome-section h1 {
+  margin-top: 10%;
+  flex-wrap: nowrap;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .hero-container .welcome-section p {
+  font-size: 16px;
+  margin-left: 44%;
+}
+body .floaty-section {
+  color: #3c4858;
+  border-radius: 2%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin: 0% 2.5%;
+}
+body .floaty-section .stand-for-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .floaty-section .stand-for-container .title {
+  flex-direction: row;
+  align-items: center;
+  font-size: large;
+  margin-bottom: 5%;
+}
+body .floaty-section .stand-for-container .topics {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+body .floaty-section .stand-for-container .topics .icons .icon1 {
+  color: #e91e63;
+}
+body .floaty-section .stand-for-container .topics .icons .icon2 {
+  color: #38bcd4;
+}
+body .floaty-section .stand-for-container .topics .icons .icon3 {
+  color: #4caf50;
+}
+body .floaty-section .stand-for-container .topics .icons {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 5fr);
+  gap: 200px;
+  font-size: 3.5rem;
+  margin-left: 15%;
+}
+body .floaty-section .stand-for-container .topics .icon-topics {
+  align-items: center;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 203px;
+  margin-left: 15%;
+}
+body .floaty-section .stand-for-container .topics .topic-text {
+  text-align: center;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  margin-left: 2%;
+  padding-bottom: 5%;
+}
+body .floaty-section .parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/mountains_background.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .floaty-section .main-raised {
+  overflow: hidden;
+}
+body .floaty-section .block-section {
+  background-image: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+body .floaty-section .block-section p {
+  font-size: 24px;
+  margin-left: 0%;
+}
+body .floaty-section .block-section h2 {
+  font-weight: 700;
+  font-size: 37px;
+}
+body .floaty-section img {
+  margin-left: 40%;
+  height: 20vh;
+}
+body .floaty-section .blog-container {
+  padding: 0%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 50px;
+  align-items: center;
+}
+body .floaty-section .blog-container .blog-section {
+  flex-direction: row;
+  align-content: center;
+}
+body .floaty-section .blog-container .blog h1 {
+  margin-left: 45%;
+}
+body .floaty-section .blog-container .blog {
+  padding: 0%;
+  display: grid;
+  flex-direction: column;
+  gap: 24px;
+}
+body .floaty-section .blog-container .blog .uncategorized .purple-category {
+  color: purple;
+}
+body .floaty-section .blog-container .blog .uncategorized .blue-category {
+  color: blue;
+}
+body .floaty-section .blog-container .blog .uncategorized .red-category {
+  color: red;
+}
+body .floaty-section .blog-container .blog .uncategorized {
+  font-size: 12px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 242px 313px 300px;
+  grid-template-rows: 20px;
+  gap: 60px;
+  margin: 0% 0% 0% 5%;
+}
+body .floaty-section .blog-container .blog .blog-titles {
+  margin: 0%;
+  align-content: center;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 300px 360px 260px;
+  grid-template-rows: 20px;
+  gap: 10px;
+  margin: 0% 0% 0% 5%;
+}
+body .floaty-section .blog-container .blog .blog-text {
+  text-align: justify;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 216px 267px 300px;
+  gap: 100px;
+  margin: 0% 0% 0% 5%;
+}
+body .floaty-section .bottom-part-container {
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/mountains_background.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .floaty-section .bottom-part-container .bottom-part-text h1 {
+  font-size: 37px;
+}
+body .floaty-section .bottom-part-container .bottom-part-text i {
+  font-size: 30px;
+}
+body .floaty-section .bottom-part-container .bottom-part-text h5 {
+  font-size: 18px;
+}
+body .floaty-section .bottom-part-container .bottom-part-text p {
+  font-size: 14px;
+}
+body .floaty-section .bottom-part-container .bottom-part-text {
+  margin-right: 70%;
+  color: white;
+}
+body footer {
+  height: 5vh;
+  width: auto;
+  background-color: #323437;
+  color: white;
+}
+body footer p {
+  margin-left: 80%;
+}/*# sourceMappingURL=home-page.css.map */

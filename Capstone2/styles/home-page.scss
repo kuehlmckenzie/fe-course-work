@@ -1,0 +1,282 @@
+$perspective: 1px;
+@mixin parallaxbg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/mountains_background.jpg");
+
+  min-height: 600px;
+
+  background-attachment: fixed;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  margin: 0;
+  padding: 0;
+  background-color: #6486bf;
+  color: white;
+
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+body {
+  margin: 0;
+  padding: 0;
+  .navbar {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    .navbar-links {
+      color: white;
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      padding: 0;
+      gap: 1.5rem;
+      .moretag {
+        align-content: center;
+        position: static;
+        margin: 5px 5px 0px 10px;
+
+        background-color: #e91e63;
+        border-color: #e91e63;
+        border-radius: 30px;
+        box-shadow: 0 2px 2px 0;
+        a {
+          padding: 15px;
+          color: white;
+        }
+      }
+      a {
+        color: white;
+      }
+    }
+    .logo {
+      white-space: nowrap;
+    }
+  }
+  .hero-container {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    background-image: url(../assets/statue3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+
+    margin: 0;
+    .welcome-section {
+      height: 700px;
+      margin-left: 40%;
+      h1 {
+        margin-top: 10%;
+        flex-wrap: nowrap;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        font-size: 16px;
+        margin-left: 44%;
+      }
+    }
+  }
+  .floaty-section {
+    color: #3c4858;
+    border-radius: 2%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin: 0% 2.5%;
+    .stand-for-container {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        flex-direction: row;
+        align-items: center;
+        font-size: large;
+        margin-bottom: 5%;
+      }
+      .topics {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .icons {
+          .icon1 {
+            color: #e91e63;
+          }
+          .icon2 {
+            color: #38bcd4;
+          }
+          .icon3 {
+            color: #4caf50;
+          }
+          align-items: center;
+
+          display: grid;
+          grid-template-columns: repeat(3, 5fr);
+          gap: 200px;
+          font-size: 3.5rem;
+          margin-left: 15%;
+        }
+        .icon-topics {
+          align-items: center;
+          font-size: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 203px;
+          margin-left: 15%;
+        }
+        .topic-text {
+          text-align: center;
+          font-size: 14px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0px;
+          margin-left: 2%;
+          padding-bottom: 5%;
+        }
+      }
+    }
+    .parallax-bg {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/assets/mountains_background.jpg");
+
+      min-height: 500px;
+
+      background-attachment: fixed;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .main-raised {
+      overflow: hidden;
+    }
+    .block-section {
+      background-image: cover;
+      background-repeat: no-repeat;
+
+      display: flex;
+
+      p {
+        font-size: 24px;
+        margin-left: 0%;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 37px;
+      }
+    }
+    img {
+      margin-left: 40%;
+      height: 20vh;
+    }
+
+    .blog-container {
+      padding: 0%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 50px;
+      align-items: center;
+
+      .blog-section {
+        flex-direction: row;
+        align-content: center;
+      }
+      .blog {
+        h1 {
+          margin-left: 45%;
+        }
+        padding: 0%;
+        display: grid;
+        flex-direction: column;
+        gap: 24px;
+        .uncategorized {
+          .purple-category {
+            color: purple;
+          }
+          .blue-category {
+            color: blue;
+          }
+          .red-category {
+            color: red;
+          }
+          font-size: 12px;
+          align-items: center;
+
+          display: grid;
+          grid-template-columns: 242px 313px 300px;
+          grid-template-rows: 20px;
+          gap: 60px;
+          margin: 0% 0% 0% 5%;
+        }
+        .blog-titles {
+          margin: 0%;
+
+          align-content: center;
+          font-size: 18px;
+          display: grid;
+          grid-template-columns: 300px 360px 260px;
+          grid-template-rows: 20px;
+          gap: 10px;
+          margin: 0% 0% 0% 5%;
+        }
+        .blog-text {
+          text-align: justify;
+          font-size: 14px;
+          display: grid;
+          grid-template-columns: 216px 267px 300px;
+          gap: 100px;
+          margin: 0% 0% 0% 5%;
+        }
+      }
+    }
+    .bottom-part-container {
+      height: auto;
+      @include parallaxbg();
+      .bottom-part-text {
+        h1 {
+          font-size: 37px;
+        }
+        i {
+          font-size: 30px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+        margin-right: 70%;
+        color: white;
+      }
+    }
+  }
+  footer {
+    height: 5vh;
+    width: auto;
+    background-color: #323437;
+    color: white;
+    p {
+      margin-left: 80%;
+    }
+  }
+}
