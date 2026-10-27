@@ -1,3 +1,6 @@
+:root a {
+  text-decoration: none;
+}
 :root {
   margin: 0;
   padding: 0;
@@ -28,6 +31,7 @@ body .navbar .navbar-links {
   gap: 1.5rem;
 }
 body .navbar .navbar-links .moretag {
+  cursor: pointer;
   align-content: center;
   position: static;
   margin: 5px 5px 0px 10px;
@@ -41,7 +45,8 @@ body .navbar .navbar-links .moretag a {
   color: white;
 }
 body .navbar .navbar-links a {
-  color: white;
+  text-decoration: none;
+  padding: 15px;
 }
 body .navbar .logo {
   white-space: nowrap;
@@ -72,10 +77,11 @@ body .hero-container .welcome-section p {
 }
 body .floaty-section {
   color: #3c4858;
-  border-radius: 2%;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   height: auto;
   margin: 0% 2.5%;
+  margin-top: -60px;
+  border-radius: 6px;
 }
 body .floaty-section .stand-for-container {
   background-color: white;
@@ -246,6 +252,7 @@ body .floaty-section .bottom-part-container .bottom-part-text {
   color: white;
 }
 body footer {
+  margin-top: -20px;
   height: 5vh;
   width: auto;
   background-color: #323437;

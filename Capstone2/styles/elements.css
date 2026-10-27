@@ -78,8 +78,7 @@ body .navbar .logo {
 }
 body .top-of-page {
   color: white;
-  background-image: linear-gradient(#c0277d, #a91e7f);
-
+  background-color: #c0277d;
   height: 35vh;
   align-content: center;
   text-align: center;
@@ -175,8 +174,8 @@ body .top-of-page {
 }
 .floaty-section .inner-text .select-element select#option-groups {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: none;
   margin: 15px 0 5px;
   padding: 7px 10px;
@@ -315,10 +314,7 @@ body .top-of-page {
   background-color: #2e2e2e;
 }
 .related-posts-container .elements-card {
-  box-shadow:
-    0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background-color: white;
   padding: 15px 30px;
@@ -345,10 +341,7 @@ body .top-of-page {
   color: #23527c;
 }
 .related-posts-container .more-tags-card {
-  box-shadow:
-    0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   margin: 50px 0;
   background-color: #fff;
@@ -370,10 +363,7 @@ body .top-of-page {
   color: #3c4858;
 }
 .related-posts-container .html-card {
-  box-shadow:
-    0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 15px 30px;
   font-weight: 500;
@@ -395,4 +385,4 @@ body .top-of-page {
 }
 .related-posts-container .html-card .card-description a {
   color: #23527c;
-} /*# sourceMappingURL=elements.css.map */
+}/*# sourceMappingURL=elements.css.map */
