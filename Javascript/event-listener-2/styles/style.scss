@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.app-container {
+  background: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-btn {
+  background-color: maroon;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: red;
+}
+
+.danger-btn {
+  background-color: darkblue;
+  color: white;
+}
+
+.danger-btn:hover {
+  background-color: skyblue;
+}
+
+button:disabled {
+  background-color: #032339;
+  cursor: not-allowed;
+}
+
+#joke-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.joke-item {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 0 6px 6px 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.joke-item p {
+  margin: 4px 0;
+}
