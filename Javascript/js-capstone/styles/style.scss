@@ -1,0 +1,180 @@
+$bg-primary: #d9d9d9;
+$bg-dark: #1a1a40;
+$bg-dark-hover: #25255a;
+$border-sidebar: #2a2a5a;
+$text-light: #ffffff;
+$text-dark: #111111;
+$text-muted: #444444;
+$font-family: "Merienda", cursive, sans-serif;
+$color-plus: #009900;
+$color-plus-hover: #007700;
+$color-minus: #d60000;
+$color-minus-hover: #aa0000;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin control-btn($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: $text-light;
+  border: none;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  @include flex-center;
+
+  &:hover {
+    background-color: $hover-color;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    height: 100vh;
+    background-color: $bg-primary;
+  }
+
+  .sidebar {
+    width: 250px;
+    background-color: $bg-dark;
+    color: $text-light;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $border-sidebar;
+
+    .sidebar-header {
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid $text-light;
+    }
+
+    .user-list {
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      overflow-y: auto;
+    }
+
+    .user-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+
+      width: 90%;
+      padding: 10px;
+      border-radius: 6px;
+      transition:
+        background-color 0.3s ease,
+        border-left 0.3s ease;
+      border-left: 4px solid transparent;
+
+      &.is-selected {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.15
+        ); // Frosted subtle layout glow
+        border-left-color: #00ff00; // Electric green left accent anchor stripe
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .btn-minus {
+        @include control-btn($color-minus, $color-minus-hover);
+      }
+
+      .btn-plus {
+        @include control-btn($color-plus, $color-plus-hover);
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+
+    .headline {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: $text-dark;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .action-box {
+      background-color: $bg-dark;
+      color: $text-light;
+      padding: 20px 60px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 2px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: $bg-dark-hover;
+      }
+    }
+
+    .legend-box {
+      position: absolute;
+      bottom: 25px;
+      background-color: $text-light;
+      border-left: 5px solid $bg-dark;
+      padding: 15px 25px;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+
+      .legend-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: $bg-dark;
+        font-size: 16px;
+      }
+
+      .legend-list {
+        list-style: none;
+        font-size: 13px;
+        color: $text-muted;
+        line-height: 1.5;
+
+        b {
+          color: $text-dark;
+        }
+      }
+    }
+  }
+}

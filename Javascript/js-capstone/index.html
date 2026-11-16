@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weighted Picker</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">Name: Weight</div>
+      <div class="user-list" id="userList"></div>
+    </div>
+
+    <div class="main-content">
+      <div class="headline" id="headlineText">It's your lucky day:</div>
+      <button class="action-box" id="rollButton">Who's it gonna be?</button>
+
+      <div class="legend-box">
+        <div class="legend-title">⚙️ Weight System Rules</div>
+        <ul class="legend-list">
+          <li>
+            • <b>Gain Weight:</b> Click the green (+) button to increase
+            selection priority likelihood.
+          </li>
+          <li>
+            • <b>Lose Weight:</b> Click the red (-) button to decrease selection
+            priority probability.
+          </li>
+          <li>
+            • <b>Minimum Limit:</b> Weights are bounded and cannot drop below 0.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
