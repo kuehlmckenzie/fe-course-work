@@ -1,0 +1,33 @@
+:root {
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+td {
+  border: 2px solid #333333;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cell-1 {
+  color: #3c4191;
+  background-color: #ffc4da;
+}
+
+.cell-2 {
+  color: #6167c7;
+  background: color #fff0f0;
+}
+
+.cell-3 {
+  color: #0e22f0;
+  background-color: #ffe8e8;
+}/*# sourceMappingURL=index.css.map */
