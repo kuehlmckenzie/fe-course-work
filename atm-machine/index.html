@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP JS Bank ATM</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="atm-machine">
+      <header class="atm-header">
+        <h1>JS BANK <span>ATM</span></h1>
+      </header>
+
+      <!-- Main Screen Display -->
+      <div class="atm-screen" id="screen">
+        Welcome. Please log in or create an account.
+      </div>
+
+      <section id="auth-view" class="view">
+        <div class="form-group">
+          <h3>Login to Account</h3>
+          <input
+            type="text"
+            id="login-card"
+            placeholder="Account Number (e.g., 1001 or 1002)"
+          />
+          <input
+            type="password"
+            id="login-pin"
+            placeholder="4-Digit PIN"
+            maxlength="4"
+          />
+          <button id="btn-login" class="btn primary">
+            Insert Card / Login
+          </button>
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+          <h3>New Customer? Open Account</h3>
+          <input type="text" id="reg-name" placeholder="Full Name" />
+          <input
+            type="password"
+            id="reg-pin"
+            placeholder="Choose 4-Digit PIN"
+            maxlength="4"
+          />
+          <input
+            type="number"
+            id="reg-deposit"
+            placeholder="Initial Deposit ($)"
+          />
+          <button id="btn-create-account" class="btn secondary">
+            Create Account
+          </button>
+        </div>
+      </section>
+
+      <section id="main-menu-view" class="view hidden">
+        <div class="grid-menu">
+          <button id="nav-balance" class="btn primary">Check Balance</button>
+          <button id="nav-deposit" class="btn primary">Deposit Cash</button>
+          <button id="nav-withdraw" class="btn primary">Withdraw Cash</button>
+          <button id="nav-settings" class="btn secondary">
+            Account Settings
+          </button>
+          <button id="btn-logout" class="btn danger full-width">
+            Eject Card (Logout)
+          </button>
+        </div>
+      </section>
+
+      <section id="deposit-view" class="view hidden">
+        <h3>Deposit Funds</h3>
+        <input
+          type="number"
+          id="deposit-amount"
+          placeholder="Enter amount ($)"
+        />
+        <button id="btn-submit-deposit" class="btn primary">
+          Confirm Deposit
+        </button>
+        <button class="btn neutral btn-back">Back to Main Menu</button>
+      </section>
+
+      <section id="withdraw-view" class="view hidden">
+        <h3>Withdraw Funds</h3>
+        <input
+          type="number"
+          id="withdraw-amount"
+          placeholder="Enter amount ($)"
+        />
+        <button id="btn-submit-withdraw" class="btn primary">
+          Confirm Withdrawal
+        </button>
+        <button class="btn neutral btn-back">Back to Main Menu</button>
+      </section>
+
+      <section id="settings-view" class="view hidden">
+        <h3>Account Settings</h3>
+        <input
+          type="password"
+          id="new-pin-input"
+          placeholder="Enter New 4-Digit PIN"
+          maxlength="4"
+        />
+        <button id="btn-update-pin" class="btn primary">Update PIN</button>
+        <hr />
+        <button id="btn-delete-account" class="btn danger">
+          Close / Delete Account
+        </button>
+        <button class="btn neutral btn-back">Back to Main Menu</button>
+      </section>
+    </div>
+
+    <div id="alert-modal" class="modal-overlay hidden">
+      <div class="modal-box">
+        <h3 id="modal-title">Notice</h3>
+        <p id="modal-message">Message goes here</p>
+        <button id="btn-close-modal" class="btn primary">OK</button>
+      </div>
+    </div>
+
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>

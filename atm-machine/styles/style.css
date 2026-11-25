@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #12161f;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.atm-machine {
+  background-color: #232a38;
+  width: 100%;
+  max-width: 440px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgb(54.6153846154, 65.5384615385, 87.3846153846);
+}
+.atm-machine .atm-header {
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+.atm-machine .atm-header span {
+  color: #3b82f6;
+  font-weight: 300;
+}
+.atm-machine .atm-screen {
+  background-color: #0f382a;
+  color: #4ade80;
+  font-family: "Courier New", Courier, monospace;
+  padding: 18px;
+  border-radius: 8px;
+  border: 3px solid rgb(9.6126760563, 35.8873239437, 26.9154929577);
+  min-height: 90px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.view h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: rgb(194.45, 211.75, 229.05);
+}
+.view hr {
+  border: 0;
+  border-top: 1px solid rgb(58.5384615385, 70.2461538462, 93.6615384615);
+  margin: 18px 0;
+}
+.view input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(64.4230769231, 77.3076923077, 103.0769230769);
+  background-color: rgb(25.1923076923, 30.2307692308, 40.3076923077);
+  color: #f8fafc;
+  font-size: 1rem;
+}
+.view input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.grid-menu .full-width {
+  grid-column: span 2;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 8px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn.primary {
+  background-color: #3b82f6;
+}
+.btn.primary:hover {
+  background-color: rgb(19.9912195122, 105.1219512195, 244.2087804878);
+}
+.btn.secondary {
+  background-color: #8b5cf6;
+}
+.btn.secondary:hover {
+  background-color: rgb(111.4837209302, 53.3348837209, 243.8651162791);
+}
+.btn.danger {
+  background-color: #ef4444;
+}
+.btn.danger:hover {
+  background-color: rgb(235.7842364532, 30.4157635468, 30.4157635468);
+}
+.btn.neutral {
+  background-color: #64748b;
+}
+.btn.neutral:hover {
+  background-color: rgb(82.9288702929, 96.1974895397, 115.2711297071);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-overlay .modal-box {
+  background: #232a38;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  border: 1px solid rgb(64.4230769231, 77.3076923077, 103.0769230769);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.modal-overlay .modal-box h3 {
+  margin-bottom: 10px;
+  color: #3b82f6;
+}
+.modal-overlay .modal-box p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=style.css.map */
