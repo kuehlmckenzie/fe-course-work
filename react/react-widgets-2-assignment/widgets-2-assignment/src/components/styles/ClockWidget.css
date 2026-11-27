@@ -1,0 +1,40 @@
+.clock-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  height: 44px;
+  box-sizing: border-box;
+}
+.clock-widget__btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: transparent;
+  color: #1f2937;
+  cursor: pointer;
+  width: 112px;
+  transition: background-color 0.15s ease;
+}
+.clock-widget__btn:hover {
+  background-color: #f3f4f6;
+}
+.clock-widget__display {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2937;
+  width: 104px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.clock-widget__placeholder {
+  font-size: 12px;
+  color: #6b7280;
+  width: 104px;
+  text-align: center;
+}/*# sourceMappingURL=ClockWidget.css.map */

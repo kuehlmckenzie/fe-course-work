@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+.rgb-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px;
+  border: 1px solid $widget-border;
+  border-radius: $widget-radius;
+  background-color: $widget-bg;
+  font-size: 13px;
+
+  &__preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__swatch {
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid $widget-border;
+    flex-shrink: 0;
+    transition: background-color 0.05s linear;
+  }
+
+  &__codes {
+    display: flex;
+    flex-direction: column;
+    width: 118px; // Fixed width prevents horizontal shifting as digits change
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__hex {
+    font-weight: 700;
+    font-size: 14px;
+    color: $widget-text;
+  }
+
+  &__rgb {
+    font-size: 11px;
+    color: #6b7280;
+  }
+
+  &__sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__channel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  &__label {
+    font-weight: 700;
+    width: 12px;
+  }
+
+  &__slider {
+    width: 110px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &__value {
+    width: 26px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: $widget-text;
+  }
+
+  &__reset {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid $widget-border;
+    border-radius: 4px;
+    background: transparent;
+    color: $widget-text;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $widget-hover;
+    }
+  }
+}
